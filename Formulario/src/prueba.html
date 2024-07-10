@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Conocimiento del Proveedor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Conocimiento del Proveedor</h1>
+        <form>
+            <section>
+                <h2>Información General</h2>
+                <label>Razón social o Nombre completo: <input type="text" name="nombre"></label>
+                <label>Siglas y/o nombres utilizados: <input type="text" name="siglas"></label>
+                <label>NIT. o Cédula No.: <input type="text" name="nit"></label>
+                <label>Teléfonos: <input type="text" name="telefonos"></label>
+                <label>Fax: <input type="text" name="fax"></label>
+                <label>Nombre completo Representante Legal: <input type="text" name="representante"></label>
+                <label>Número Documento de Identidad: <input type="text" name="documento"></label>
+                <label>Dirección de la oficina principal: <input type="text" name="direccion"></label>
+                <label>Ciudad: <input type="text" name="ciudad"></label>
+                <label>Web: <input type="url" name="web"></label>
+                <label>E-mail: <input type="email" name="email"></label>
+            </section>
+
+            <section>
+                <h2>Clasificación del Proveedor</h2>
+                <label><input type="checkbox" name="clasificacion" value="Seguridad"> Seguridad</label>
+                <label><input type="checkbox" name="clasificacion" value="Comercializador"> Comercializador</label>
+                <label><input type="checkbox" name="clasificacion" value="Servicios"> Servicios</label>
+                <label><input type="checkbox" name="clasificacion" value="Otros"> Otros</label>
+            </section>
+
+            <section>
+                <h2>Certificaciones Vigentes</h2>
+                <label><input type="checkbox" name="certificaciones" value="OEA"> Operador Económico Autorizado - OEA</label>
+                <label><input type="checkbox" name="certificaciones" value="ISO 28000"> ISO 28000</label>
+                <label><input type="checkbox" name="certificaciones" value="ISO 28001"> ISO 28001</label>
+                <label>Otro: <input type="text" name="otro_cert"></label>
+                <label><input type="checkbox" name="certificaciones" value="ISO 9001"> ISO 9001</label>
+                <label><input type="checkbox" name="certificaciones" value="BASC"> BASC</label>
+                <label><input type="checkbox" name="certificaciones" value="ISO 27001"> ISO 27001</label>
+                <label><input type="checkbox" name="certificaciones" value="No Certificado"> No Certificado o Resolución</label>
+            </section>
+
+            <section>
+                <h2>Información para Pago</h2>
+                <label>Contacto Cartera: <input type="text" name="contacto_cartera"></label>
+                <label>Correo Notificación de Pago: <input type="email" name="correo_pago"></label>
+                <label>Plazo de Pago: <input type="text" name="plazo_pago"></label>
+            </section>
+
+            <section>
+                <h2>Referencias Comerciales</h2>
+                <div class="referencia">
+                    <label>Nombre de la Empresa: <input type="text" name="empresa1"></label>
+                    <label>Contacto: <input type="text" name="contacto1"></label>
+                    <label>Cargo: <input type="text" name="cargo1"></label>
+                    <label>Teléfono: <input type="text" name="telefono1"></label>
+                </div>
+                <div class="referencia">
+                    <label>Nombre de la Empresa: <input type="text" name="empresa2"></label>
+                    <label>Contacto: <input type="text" name="contacto2"></label>
+                    <label>Cargo: <input type="text" name="cargo2"></label>
+                    <label>Teléfono: <input type="text" name="telefono2"></label>
+                </div>
+            </section>
+
+            <section>
+                <h2>Declaración de Origen de Fondos y Beneficiarios Finales</h2>
+                <label>Nombre: <input type="text" name="nombre_declarante"></label>
+                <label>Identificado con: <input type="text" name="identificacion"></label>
+                <label>No.: <input type="text" name="numero_identificacion"></label>
+                <label>De: <input type="text" name="de"></label>
+                <label>En mi calidad de: <input type="text" name="calidad"></label>
+                <label>Persona jurídica: <input type="text" name="persona_juridica"></label>
+                <label>NIT: <input type="text" name="nit_juridico"></label>
+                <label>Declaración: <textarea name="declaracion"></textarea></label>
+            </section>
+
+            <section>
+                <h2>Tratamiento de Datos Personales – Habeas Data</h2>
+                <p>
+                    El abajo firmante en su propio nombre o en nombre de la entidad que representa declara y garantiza que la información suministrada es verídica...
+                </p>
+                <label><input type="checkbox" name="acepto" value="si"> Acepto los términos y condiciones</label>
+            </section>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
